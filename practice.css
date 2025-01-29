@@ -326,6 +326,7 @@ main{
     display:inline-block;
     width: 30px;
     font-size: larger;
+    
 }
 .pagination a.active{
     background-color: #ff7200;
