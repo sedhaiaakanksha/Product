@@ -418,16 +418,18 @@ main {
   background-color: #accdc2;
   border-radius: 5px;
 }
-.addToCartPopup {
+/* buy now popup card styling*/
+.buyNowPopup {
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.445);
+  background-color: rgba(0, 0, 0, 0.237);
   display: none;
   opacity: 0;
   position: fixed;
   z-index: 9999999999999999999999998999999999;
 }
-.addToCartPopup .popupCard {
+/* buy now popup card  styling*/
+.buyNowPopup .popupCard {
   width: 340px;
   height: 200px;
   background-color: white;
@@ -440,27 +442,30 @@ main {
   align-items: center;
   flex-direction: column;
 }
-
+/* buy now popup card's popupmessage*/ 
 .popupMessage {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-style: oblique;
   font-weight: 600;
 }
+/* To close popup */
 .popupActions {
   width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 30px;
 }
+/* button to close popup */
 .popupActions button {
   width: 40%;
   height: 35px;
   background-color: orange;
   border: none;
 }
+/* "Added" message styling when you click on Add to card */
 .ADDEDCART {
   transition: all 0.4s linear;
-  background: linear-gradient(90deg, #eb9b07ef, #bdf007);
+  background: linear-gradient(90deg, #eb3507c7, #9de680);
   /* animation: animate 0.8s linear infinite; */
 }

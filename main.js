@@ -1,3 +1,4 @@
+// javaScript to add functionality to search button
 function search() {
   console.log("called");
   const searchInput = document.querySelector(".search").value.toLowerCase();
@@ -14,6 +15,7 @@ function search() {
   });
 }
 
+//To show "Added" message when you click on Add to cart
 const allButtons = document.querySelectorAll(".btn1 button");
 
 allButtons.forEach((button) => {
@@ -30,3 +32,20 @@ allButtons.forEach((button) => {
     }, 1600);
   });
 });
+//To show a popup when you click buy now
+console.log("hello");
+      var popupmenu = document.querySelector(".buyNowPopup");
+      var close = document.querySelector(".popupActions button");
+
+      var popupBtn = document.querySelectorAll(".btn2 button");
+      popupBtn.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          console.log("clicked");
+          popupmenu.style.display = "block";
+          popupmenu.style.opacity = "1";
+        });
+      });
+      close.addEventListener("click", () => {
+        popupmenu.style.display = "none";
+        popupmenu.style.opacity = "0";
+      });
